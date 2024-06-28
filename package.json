@@ -1,0 +1,19 @@
+{
+  "name": "first-testing-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "c8 --reporter=html --reporter=text mocha --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "c8": "^10.1.2",
+    "chai": "^4.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.5.1",
+    "mochawesome": "^7.1.3"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 11,
+    "passes": 11,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-28T16:16:15.607Z",
+    "end": "2024-06-28T16:16:15.639Z",
+    "duration": 32,
+    "testsRegistered": 11,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd42a9b2-919e-4e97-b185-755be18ca27a",
+      "title": "",
+      "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+      "file": "\\test\\numbers_validator.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8ee875f-8014-4c9b-a708-f0cca40deba8",
+          "title": "Main Test Suite - Numbers Validator",
+          "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+          "file": "\\test\\numbers_validator.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "cf44e614-33d5-4e17-8f94-c3bd7af8bf32",
+              "title": "Test Sute 1 - Is Number even",
+              "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+              "file": "\\test\\numbers_validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should return true for even number",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Sute 1 - Is Number even Should return true for even number",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isNumberEven(6);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "6b8cc9f9-3da0-4885-810e-6d351723c4b2",
+                  "parentUUID": "cf44e614-33d5-4e17-8f94-c3bd7af8bf32",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return false for odd number",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Sute 1 - Is Number even should return false for odd number",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isNumberEven(5);\nexpect(result).to.be.false;",
+                  "err": {},
+                  "uuid": "fe56c398-42f9-439d-a9e9-42c0c331f884",
+                  "parentUUID": "cf44e614-33d5-4e17-8f94-c3bd7af8bf32",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error if input is not a number",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Sute 1 - Is Number even should throw an error if input is not a number",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(() => ObjValidator.isNumberEven('string')).to.throw(`[string] is not of type \"Number\" it is of type \"string\"`);",
+                  "err": {},
+                  "uuid": "4fd6db39-c673-41c7-b272-8e6572a2fd79",
+                  "parentUUID": "cf44e614-33d5-4e17-8f94-c3bd7af8bf32",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6b8cc9f9-3da0-4885-810e-6d351723c4b2",
+                "fe56c398-42f9-439d-a9e9-42c0c331f884",
+                "4fd6db39-c673-41c7-b272-8e6572a2fd79"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 3,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "bf1e3a27-c6e3-4956-b020-0d97f455ab3e",
+              "title": "Test Suite 2 -  Get Even Numbers from Array",
+              "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+              "file": "\\test\\numbers_validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Shoult throw an error if values of array are not numbers",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 2 -  Get Even Numbers from Array Shoult throw an error if values of array are not numbers",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const invalidInput = [[\"string\", 2, 3]];\nexpect(() => ObjValidator.getEvenNumbersFromArray(invalidInput)).to.throw('[string,2,3] is not an array of \"Numbers\"');",
+                  "err": {},
+                  "uuid": "d37f8297-7f62-484a-b681-c1bd5acc842e",
+                  "parentUUID": "bf1e3a27-c6e3-4956-b020-0d97f455ab3e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return an array of even numbers, if input is an array of numbers",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 2 -  Get Even Numbers from Array should return an array of even numbers, if input is an array of numbers",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.getEvenNumbersFromArray([1,2,3,4,5,6]);\nexpect(result).to.deep.equal([2,4,6]);",
+                  "err": {},
+                  "uuid": "a0bea816-7f5f-4f93-adbb-58221c4661f3",
+                  "parentUUID": "bf1e3a27-c6e3-4956-b020-0d97f455ab3e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d37f8297-7f62-484a-b681-c1bd5acc842e",
+                "a0bea816-7f5f-4f93-adbb-58221c4661f3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "9abb0f46-fcd5-49f5-9903-e0f70843444e",
+              "title": "Test Suite 3 -  Is All Numbers",
+              "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+              "file": "\\test\\numbers_validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should throw an error when input is not an array",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 3 -  Is All Numbers Should throw an error when input is not an array",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(()=>ObjValidator.isAllNumbers('string')).to.throw('[string] is not an array');",
+                  "err": {},
+                  "uuid": "9e0b0406-c9e8-4f70-bfc0-4358ab9a2da9",
+                  "parentUUID": "9abb0f46-fcd5-49f5-9903-e0f70843444e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return true if every elements of array is type of number",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 3 -  Is All Numbers should return true if every elements of array is type of number",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isAllNumbers([1,2,3,4]);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "5c452102-84b9-4dc8-9332-f87a0f9bca4f",
+                  "parentUUID": "9abb0f46-fcd5-49f5-9903-e0f70843444e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return false if not every elements are numbers",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 3 -  Is All Numbers should return false if not every elements are numbers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isAllNumbers([1,2,'nanuka',4]);\nexpect(result).to.be.false;",
+                  "err": {},
+                  "uuid": "ef9c5509-a301-42cc-b72b-c5749f2f6715",
+                  "parentUUID": "9abb0f46-fcd5-49f5-9903-e0f70843444e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e0b0406-c9e8-4f70-bfc0-4358ab9a2da9",
+                "5c452102-84b9-4dc8-9332-f87a0f9bca4f",
+                "ef9c5509-a301-42cc-b72b-c5749f2f6715"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "0d055d58-a86e-4650-b1d9-b4f378f96fbe",
+              "title": "Test Suite 4 - Is Integer",
+              "fullFile": "C:\\Users\\Hp Probook\\Desktop\\first-project-testing\\test\\numbers_validator.spec.js",
+              "file": "\\test\\numbers_validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should throw an error if input is not a number",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 4 - Is Integer Should throw an error if input is not a number",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(() => ObjValidator.isInteger('nanuka')).to.throw('[nanuka] is not a number');",
+                  "err": {},
+                  "uuid": "0510dcdd-d8ae-4be9-a3a9-0f567cbe9c26",
+                  "parentUUID": "0d055d58-a86e-4650-b1d9-b4f378f96fbe",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should return false is passed input is not Integer",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 4 - Is Integer Should return false is passed input is not Integer",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isInteger(1.1);\nexpect(result).to.be.false;",
+                  "err": {},
+                  "uuid": "9d463770-b715-4253-b92e-45eade0751cc",
+                  "parentUUID": "0d055d58-a86e-4650-b1d9-b4f378f96fbe",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should return true is passed input is not Integer",
+                  "fullTitle": "Main Test Suite - Numbers Validator Test Suite 4 - Is Integer Should return true is passed input is not Integer",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result = ObjValidator.isInteger(3);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "cde9a500-2ac9-463e-a7dc-342fed90ca70",
+                  "parentUUID": "0d055d58-a86e-4650-b1d9-b4f378f96fbe",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0510dcdd-d8ae-4be9-a3a9-0f567cbe9c26",
+                "9d463770-b715-4253-b92e-45eade0751cc",
+                "cde9a500-2ac9-463e-a7dc-342fed90ca70"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.5.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "[object Object]": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
